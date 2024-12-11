@@ -1,0 +1,612 @@
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 98%;
+            overflow: auto;
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Hides the scrollbar in WebKit browsers */
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 100%;
+            border-bottom: 0px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .logo img {
+            margin-left: 15%;
+            width: 140px;
+            height: 140px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        .nav a:hover::before {
+            width: 100%;
+        }
+
+        .nav a:hover {
+            color: #555;
+        }
+
+        .nav a.active {
+            color: black;
+        }
+
+        .nav a.active::before {
+            width: 100%;
+        }
+
+        .log {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: -50px;
+            animation: slideIn 1.5s ease-out;
+            width: 100%;
+        }
+
+        .log-text {
+            max-width: 45%;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-left: 30px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .log img {
+            width: 850px;
+            height: 550px;
+            max-width: 50%;
+            height: 500px;
+        }
+
+        /* Teakwood Container */
+        .teakwood-container {
+            width: 100%;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            margin-top: 50px;
+        }
+
+        .teakwood-image {
+            width: 50%;
+            height: auto;
+            opacity: 0; /* Initial state (hidden) */
+            transform: translateY(100px); /* Start position (below view) */
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .teakwood-image.show {
+            opacity: 1;
+            transform: translateY(0); /* End position */
+        }
+
+        .teakwood-details {
+            width: 50%;
+            padding-left: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Products Section */
+        .products {
+            display: flex;
+            justify-content: space-between; /* Space out products */
+            width: 82%;
+            margin-top: 50px;
+            margin-left: 2%;
+            flex-wrap: wrap; /* Allow wrapping if needed */
+        }
+
+        .product-item {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            margin-bottom: 20px;
+            width: 30%; /* Adjust width to fit 3 items in a row */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        .product-item i {
+            font-size: 3rem; /* Smaller icon size */
+            color: #333;
+            margin-right: 20px;
+        }
+
+        .product-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .product-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .product-description {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space out text and icon */
+            width: 100%;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: grey;
+            color:whitesmoke;
+            padding: 20px;
+            width: 102%;
+            text-align: left;
+            margin-top: 50px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-right: 20px;
+            margin-left: 2%;
+        }
+
+        .footer-column h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: whitesmoke;
+        }
+
+        .footer-column p {
+            margin: 5px 0;
+            color: whitesmoke;
+            font-size: 1rem;
+        }
+
+        /* Table Container */
+        .table-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        .table-container img {
+            margin: 0 20px; /* Adjust spacing around the image */
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+        }
+
+        /* Table Styling */
+        .table-style {
+            width: 25%; /* Adjust width to fit two tables and an image */
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        .table-style th, .table-style td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table-style th {
+            background-color: #cea57f;
+            font-weight: 700;
+        }
+
+        .table-style tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table-style tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Images below the note */
+        .image-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .image-row img {
+            width: 45%;
+            height: auto;
+        }
+
+        /* Specific styles for rotating images */
+        .rotating-images img {
+            height: 400px; /* Example height */
+            width: 600px; /* Example width */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .legal {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: left; /* Align text to the left */
+            margin-top: 20px; /* Add some margin at the top if needed */
+        }
+
+        .legal img {
+            width: 20%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Add spacing between image and text */
+        }
+
+        .legal p {
+            max-width: 70%; /* Ensure the text doesn't take up more space than necessary */
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .trade{
+            display: flex;
+            gap:50px;
+            align-items: left;
+        }
+        .trade img{
+            width: 10%;
+            
+            height: 10%;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .modal {
+            display: none; 
+            position:fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0%;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 1% auto;
+            padding: 20px 50px;
+            border: 1px solid #888;
+            width: 100%; 
+            max-width: 90%;
+
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 2px;
+        }
+        .imagerow::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    
+/* ---------------------------------------------- */
+
+/* Default Navigation Bar */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* ABOUT US Section Adjustments */
+#aboutLink {
+    scroll-behavior: smooth; /* Smooth scroll to the section */
+}
+
+/* ABOUT US content */
+.about-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Responsive table styles */
+.about-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.about-content table, .about-content th, .about-content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.about-content th {
+    background-color: #f2f2f2;
+}
+
+.about-content td {
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+/* Hamburger Menu for Small Screens */
+
+
+
+
+
+
+        @media only screen and (max-width: 768px) {
+            /* General body adjustments */
+            body {
+                padding: 10px;
+            }
+        
+            /* Responsive header */
+            header {
+                flex-wrap: wrap;
+                padding: 10px;
+                text-align: center;
+            }
+        
+            .logo img {
+                width: 100px;
+                height: 100px;
+            }
+        
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            /* Log section adjustments */
+            .log {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .log-text {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+        
+            .log img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            /* Teakwood container adjustments */
+            .teakwood-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .teakwood-image,
+            .teakwood-details {
+                width: 100%;
+            }
+        
+            .teakwood-details {
+                padding: 0;
+            }
+        
+            /* Products section */
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .product-item {
+                width: 90%;
+                text-align: center;
+            }
+        
+            /* Snapshot images adjustments */
+            .image-row.rotating-images {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        
+            .image-row.rotating-images img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            /* Table container adjustments */
+            .table-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .table-style {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        
+            /* Footer adjustments */
+            footer {
+                text-align: center;
+            }
+        
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .footer-column {
+                margin-bottom: 20px;
+            }
+
+            .menu-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: black;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        
+            .nav-links {
+                display: none; /* Hidden by default */
+                flex-direction: column;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+        
+            .nav-links a {
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+                font-size: 1.2rem;
+            }
+        
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+        
+            .nav-links.show {
+                display: flex;
+            }
+            
+        }
+        
+@media only screen and (max-width: 480px) {
+            /* Further adjustments for small screens */
+            .nav a {
+                font-size: 0.9rem;
+            }
+        
+            .log img,
+            .teakwood-image,
+            .image-row img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .product-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        
+            .footer-column p {
+                font-size: 0.8rem;
+            }
+        
+            /* Vertical stacking for snapshot images */
+            .image-row.rotating-images {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .image-row img {
+                max-width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+        
