@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,85 +6,91 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Projects</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #ff6600;
+            --bg: #f5f7fa;
+            --card-bg: #fff;
+            --text: #222;
+            --muted: #666;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;  /* Set background to black */
-            color: #fff;  /* Set text color to white for contrast */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
         }
 
         .container {
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
             max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 16px 32px 16px;
         }
 
         .project-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
 
         .project-title h4 {
-            font-size: 32px;
-            color: #fff;  /* White color for title */
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 700;
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         .project-title p {
-            color: #ccc;  /* Lighter text color */
-            font-size: 16px;
+            color: var(--muted);
+            font-size: 1.08rem;
+            margin-top: 8px;
         }
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            width: 100%;
         }
-
-        /* .project {
-            background-color: #1c1c1c;  
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        } 
-
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-*/
 
         .project {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            background-color: #1f1f1f; /* Dark background for projects */
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* White box shadow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+            background: var(--card-bg);
+            border-radius: 18px;
+            box-shadow: 0 4px 18px rgba(37,99,235,0.08);
+            padding: 32px 24px 28px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 0.18s, box-shadow 0.18s;
+            min-height: 260px;
+            position: relative;
+            border-bottom: 5px solid var(--primary);
         }
-        
+
         .project:hover {
-            transform: translateY(-10px); /* Slight hover effect */
-            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Stronger white shadow on hover */
+            transform: translateY(-8px) scale(1.025);
+            box-shadow: 0 8px 28px rgba(255,102,0,0.12);
+            border-bottom: 5px solid var(--accent);
         }
-        
+
         .project h4 {
-            font-size: 22px;
-            margin: 10px 0;
-            color: #fff;
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 0;
         }
 
         .project p {
-            font-size: 14px;
-            color: #ccc;  /* Lighter text for description */
-            flex-grow: 1;
+            font-size: 1.03rem;
+            color: var(--muted);
+            margin-bottom: 18px;
         }
 
         .language-bar {
@@ -93,6 +100,7 @@
             border-radius: 4px;
             overflow: hidden;
             width: 100%;
+            background: #e8eaf6;
         }
 
         .language-bar div {
@@ -101,58 +109,72 @@
 
         .language-names {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             font-size: 12px;
-            color: #ccc;
+            color: var(--muted);
             margin-top: 8px;
+            gap: 10px;
         }
 
         .language-names span {
-            flex-grow: 1;
             text-align: center;
+            font-weight: 500;
         }
 
-
-        .project button{
-            
-            text-decoration: none;
+        .project button {
+            background: var(--primary);
             color: #fff;
-            background-color: #0073e6;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-left: 20%;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-weight: 600;
+            margin-top: 18px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+        }
 
+        .project button:hover {
+            background: var(--accent);
+            color: #fff;
         }
 
         .project button a {
-            color: white;
+            color: inherit;
             text-decoration: none;
-            background-color: #0073e6;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 7px;
         }
 
         .project button a:hover {
-            background-color: #005bb5;
+            color: #fff;
         }
 
         /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
             .container {
-                width: 95%;
+                padding: 28px 4vw 24px 4vw;
             }
-
             .project-title h4 {
-                font-size: 28px;
-            }
-
-            .project-title p {
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
 
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 2vw 16px 2vw;
+            }
+            .project-title h4 {
+                font-size: 1.15rem;
+            }
+            .project {
+                padding: 18px 10px 16px 10px;
+                min-height: 180px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -160,7 +182,7 @@
     <section class="project-content" id="projects">
         <div class="container">
             <div class="project-title">
-                <h4>My Projects On Github</h4>
+                <h4><i class="fa-solid fa-folder-open"></i> My Projects On Github</h4>
                 <p>Feel free to explore, but don’t take them seriously just yet!&#128517;</p>
             </div>
             <div class="projects" id="projects-container">
@@ -169,105 +191,328 @@
         </div>
     </section>
 
-    
     <script>
-        const username = "cybmanuer"; // 
-const projectsContainer = document.getElementById("projects-container");
+        const username = "cybmanuer";
+        const projectsContainer = document.getElementById("projects-container");
 
-// Function to fetch repository data
-async function fetchRepositories() {
-    try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos`);
-        
-        // Check if the response is OK (status code 200)
-        if (!response.ok) {
-            throw new Error(`GitHub API returned an error: ${response.statusText}`);
+        // Function to fetch repository data
+        async function fetchRepositories() {
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}/repos`);
+                if (!response.ok) {
+                    throw new Error(`GitHub API returned an error: ${response.statusText}`);
+                }
+                const repositories = await response.json();
+                if (!Array.isArray(repositories)) {
+                    throw new Error("Unexpected response format: Repositories data is not an array.");
+                }
+
+                // Sort by most recently updated
+                repositories.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+                for (const repo of repositories) {
+                    // Fetch language breakdown for each repository
+                    const languagesResponse = await fetch(repo.languages_url);
+                    const languages = await languagesResponse.json();
+                    const languageTotal = Object.values(languages).reduce((a, b) => a + b, 0);
+
+                    // Calculate language percentages
+                    const languagePercentages = Object.entries(languages).map(([lang, value]) => ({
+                        lang,
+                        percentage: ((value / languageTotal) * 100).toFixed(1),
+                    }));
+
+                    // Add project to the container
+                    addProjectToDOM(repo, languagePercentages);
+                }
+            } catch (error) {
+                console.error("Error fetching repositories:", error);
+                projectsContainer.innerHTML = `<div style="color:var(--accent);font-weight:600;">An error occurred while fetching repositories: ${error.message}</div>`;
+            }
         }
 
+        // Function to dynamically add a project to the DOM
+        function addProjectToDOM(repo, languagePercentages) {
+            const projectDiv = document.createElement("div");
+            projectDiv.classList.add("project");
+
+            // Create language bar
+            const languageBar = languagePercentages
+                .map(
+                    (lang) =>
+                        `<div style="width:${lang.percentage}%; background-color:${getColorForLanguage(lang.lang)};" title="${lang.lang} (${lang.percentage}%)"></div>`
+                )
+                .join("");
+
+            // Create language names below the language bar
+            const languageNames = languagePercentages
+                .map(
+                    (lang) =>
+                        `<span style="color:${getColorForLanguage(lang.lang)}">${lang.lang}</span>`
+                )
+                .join("");
+
+            projectDiv.innerHTML = `
+                <h4>${repo.name}</h4>
+                <p>${repo.description || "No description available."}</p>
+                <div class="language-bar">${languageBar}</div>
+                <div class="language-names">${languageNames}</div>
+                <button><a href="${repo.html_url}" target="_blank"><i class="fab fa-github"></i> View on GitHub</a></button>
+            `;
+
+            projectsContainer.appendChild(projectDiv);
+        }
+
+        // Function to get color for programming languages
+        function getColorForLanguage(language) {
+            const colors = {
+                JavaScript: "#f1e05a",
+                HTML: "#e34c26",
+                CSS: "#563d7c",
+                Python: "#3572A5",
+                Java: "#b07219",
+                C: "#555555",
+                Ruby: "#701516",
+                Go: "#00ADD8",
+                PHP: "#4F5D95",
+                TypeScript: "#3178c6",
+                Shell: "#89e051",
+                SCSS: "#c6538c",
+                Jupyter: "#DA5B0B",
+                // Add more languages and colors as needed
+            };
+            return colors[language] || "#ccc";
+        }
+
+        // Fetch repositories on page load
+        fetchRepositories();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- chatppt -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --accent-color: #ff6b00;
+      --bg-color: #f4f7f9;
+      --card-bg: #ffffff;
+      --text-color: #222;
+      --muted-color: #666;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .project-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-title h4 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    .project-title p {
+      font-size: 1rem;
+      color: var(--muted-color);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 20px var(--shadow-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 6px solid var(--accent-color);
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .project h4 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: var(--muted-color);
+      margin-bottom: 15px;
+    }
+
+    .language-bar {
+      display: flex;
+      height: 6px;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .language-bar div {
+      height: 100%;
+    }
+
+    .language-names {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.75rem;
+      margin-bottom: 15px;
+    }
+
+    .language-names span {
+      background-color: #e9ecef;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #444;
+    }
+
+    .project button {
+      padding: 10px 16px;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
+    .project button a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .project button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .project-title h4 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="project-content" id="projects">
+    <div class="container">
+      <div class="project-title">
+        <h4>My Projects On GitHub</h4>
+        <p>Feel free to explore, but don’t take them seriously just yet! 😅</p>
+      </div>
+      <div class="projects" id="projects-container"></div>
+    </div>
+  </section>
+
+  <script>
+    const username = "cybmanuer";
+    const projectsContainer = document.getElementById("projects-container");
+
+    async function fetchRepositories() {
+      try {
+        const response = await fetch(`https://api.github.com/users/${username}/repos`);
+        if (!response.ok) throw new Error(`GitHub error: ${response.statusText}`);
         const repositories = await response.json();
 
-        // Ensure the response is an array before iterating over it
-        if (!Array.isArray(repositories)) {
-            throw new Error("Unexpected response format: Repositories data is not an array.");
-        }
-
-        // Process each repository if it's a valid array
         for (const repo of repositories) {
-            // Fetch language breakdown for each repository
-            const languagesResponse = await fetch(repo.languages_url);
-            const languages = await languagesResponse.json();
-            const languageTotal = Object.values(languages).reduce((a, b) => a + b, 0);
-
-            // Calculate language percentages
-            const languagePercentages = Object.entries(languages).map(([lang, value]) => ({
-                lang,
-                percentage: ((value / languageTotal) * 100).toFixed(1),
-            }));
-
-            // Add project to the container
-            addProjectToDOM(repo, languagePercentages);
+          const languagesResponse = await fetch(repo.languages_url);
+          const languages = await languagesResponse.json();
+          const total = Object.values(languages).reduce((a, b) => a + b, 0);
+          const percentages = Object.entries(languages).map(([lang, val]) => ({
+            lang,
+            percentage: ((val / total) * 100).toFixed(1)
+          }));
+          addProject(repo, percentages);
         }
-    } catch (error) {
-        console.error("Error fetching repositories:", error);
-        alert(`An error occurred while fetching repositories: ${error.message}`);
+      } catch (err) {
+        console.error("Fetch error:", err);
+        projectsContainer.innerHTML = `<p style="color:red;">Error loading projects. Please try again later.</p>`;
+      }
     }
-}
 
-// Function to dynamically add a project to the DOM
-function addProjectToDOM(repo, languagePercentages) {
-    const projectDiv = document.createElement("div");
-    projectDiv.classList.add("project");
+    function addProject(repo, languagePercentages) {
+      const project = document.createElement("div");
+      project.className = "project";
 
-    // Create language bar
-    const languageBar = languagePercentages
-        .map(
-            (lang) =>
-                `<div style="width:${lang.percentage}%; background-color:${getColorForLanguage(lang.lang)};" title="${lang.lang} (${lang.percentage}%)"></div>`
-        )
+      const languageBar = languagePercentages
+        .map(lang => `<div style="width:${lang.percentage}%; background-color:${getLangColor(lang.lang)};"></div>`)
         .join("");
 
-    // Create language names below the language bar
-    const languageNames = languagePercentages
-        .map(
-            (lang) =>
-                `<span style="color:${getColorForLanguage(lang.lang)}">${lang.lang}</span>`
-        )
+      const languageNames = languagePercentages
+        .map(lang => `<span>${lang.lang}</span>`)
         .join("");
 
-    projectDiv.innerHTML = `
+      project.innerHTML = `
         <h4>${repo.name}</h4>
         <p>${repo.description || "No description available."}</p>
         <div class="language-bar">${languageBar}</div>
         <div class="language-names">${languageNames}</div>
         <button><a href="${repo.html_url}" target="_blank">View on GitHub</a></button>
-    `;
+      `;
 
-    projectsContainer.appendChild(projectDiv);
-}
+      projectsContainer.appendChild(project);
+    }
 
-// Function to get color for programming languages
-function getColorForLanguage(language) {
-    const colors = {
+    function getLangColor(lang) {
+      const colors = {
         JavaScript: "#f1e05a",
         HTML: "#e34c26",
         CSS: "#563d7c",
         Python: "#3572A5",
         Java: "#b07219",
-        C: "#555555",  // Add more languages and colors as needed
+        C: "#555555",
         Ruby: "#701516",
         Go: "#00ADD8",
-        PHP: "#4F5D95",
-        // Default color if not in the list
-    };
+        PHP: "#4F5D95"
+      };
+      return colors[lang] || "#bbb";
+    }
 
-    // Return the color for the language, or a default color if the language is not found
-    return colors[language] || "#ccc"; // Default to gray if language is unknown
-}
-
-// Fetch repositories on page load
-fetchRepositories();
-
-    </script>
-
+    fetchRepositories();
+  </script>
 </body>
-</html>
+</html> -->

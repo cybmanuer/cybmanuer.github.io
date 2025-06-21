@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="./files/logo.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head> 
+<style>
+
+
+.acards {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 100px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.acards h2 {
+  font-size: 25px;
+  color: #ff6347; /* Unique vibrant color (Tomato red) */
+  margin: 20px;
+  /* text-transform: uppercase; */
+  
+}
+
+.acards h3 {
+  font-size: 1.5em;
+  color: #7fffd4; /* Unique cool color (Aquamarine) */
+  /* font-style: italic; */
+  margin-top: 10px;
+}
+
+/* Add hover effect for the text */
+.acards h2:hover, .acards h3:hover {
+  color: #ffd700; /* Change color on hover to Gold */
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect for the card itself */
+.acards:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.go-button {
+  background-color: white; 
+  color: black; 
+  padding: 15px 30px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; 
+  border-radius: 30px; 
+  /* box-shadow: 0 4px 15px rgba(177, 167, 167, 0.989);  */
+}
+
+.go-button .go-link {
+  text-decoration: none; 
+  color: black;
+  display: block; 
+}
+
+.go-button:hover {
+  border-radius: 100px 50px 100px 50px; 
+
+}
+
+.go-button:active {
+  transform: scale(1); /* Reset size when clicked */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on click */
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 20px;
+    max-width: 100%; /* Card takes up more space on smaller screens */
+  }
+
+  .cards h2 {
+    font-size: 20px; /* Smaller font size on mobile */
+  }
+
+  .cards h3 {
+    font-size: 1.2em; /* Smaller font size on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .acards {
+    padding: 25px;
+    max-width: 100%; /* Card takes up almost the full width */
+  }
+
+  .acards h2 {
+    font-size: 18px; /* Even smaller font size on very small screens */
+  }
+
+  .acards h3 {
+    font-size: 1.1em; /* Smaller font size on very small screens */
+  }
+}
+</style>
+<body>
+
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+             <a href="index.html" class="logo">
+                    <p class="signature">Cyb<span>manu</span>er</p>
+              </a>     
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>    
+                </ul>
+                
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </div>
+        </div> 
+    </header>
+
+    <div class="acards">
+      <h1 style="font-size: 50px;">&#129300;</h1>
+       <h2><br>Everything you need is on the main page, but here you are—curious to Know more!</h2>
+       <h3><i>Then, why not try the contact page?</i> &#128521;</h3>
+<br>
+      <button class="go-button">
+        <a href="index.html" class="go-link">Then Let's Go There &#128077;</a>
+      </button>
+
+
+    </div>
+
+</body>
+</html>

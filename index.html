@@ -7,268 +7,543 @@
     <title>Manohar</title>
     <link rel="icon" href="./files/logo.png">
 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+      <!-- <script src="script.js"></script> -->
+
 </head> 
 
 <body>
 
     <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <!-- <a href="" class="logo">
-                    
-                    <img src="files/signaturecropped.png" alt="" class="signature">
-                    <i class="fa fa-bolt"></i>
-                </a> -->
+  <header>
+  <div class="container navbar">
+    <div class="logo"><span>Manohar</span></div>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul id="navLinks">
+        <!-- <li><a href="#home" class="active">Home</a></li> -->
+        <li><a href="#home" class="active">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certifications</a></li>
+        <li><a href="#leetcode">Skillset</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-                <a href="" class="logo">
-                    <p class="signature">Cyb<span>manu</span>er</p>
-    
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-
-            </div>
-        </div> 
-    </header>
  
     <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="files/me.jpg" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h2>Hi</h2><br>
-            <h1><span>I'm </span>Manohar T  H</h1><br>
-            <p>Welcome to my portfolio website! I'm a
-                a passionate student currently pursuing my Master's in Computer Applications (MCA). With a strong foundation in computer science, I am dedicated to continuously learning and growing in this ever-evolving field.<br><br>
-                I have honed my skills in various programming languages, including C++, Java, and Python, and am proficient in web technologies like HTML, CSS, and MySQL. My toolkit also includes modern development environments and platforms such as VS Code, GitHub, and Firebase.
-            <div class="btn-group">
-                <a href="resume.html" class="btn   active">&#128165;View CV&#128165;</a>
-                <!-- <a href="mailto:manohar017manu@gmail.com" class="btn">Contact</a> -->
-            </div>
-
-            <div class="social">
-                <a href="mailto:manohar017manu@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/cybmanuer"><i class="fa-brands fa-github"></i></a>
-                <a href="https://leetcode.com/"><i class="fa fa-code"></i></a>
-                <a href="https://www.linkedin.com/in/manohar-th/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span>Manohar Th</span></h1>
+    <h2><a href="https://bmsce.ac.in/">BMSCE MCA'25</a> <b>|</b><a href="https://www.linkedin.com/company/techvito/posts/?feedView=all"> Techvito(Intern)</a></h2>
+    <p>
+      DSA & Problem-Solving <b>| </b>Web Development & Cybersecurity Enthusiast  Passionate About Building Secure & Innovative Solutions.
+    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/manohar-th/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://leetcode.com/u/Manohar_17/" target="_blank" title="LeetCode">
+        <i class="fa-solid fa-code"></i>
+      </a>
+      <a href="https://github.com/cybmanuer/" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
-
-        <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me &#129303;</h4>
-                    <ul>
-                      <li>I am currently pursuing my final year Master's Degree in Computer Applications.I have built a solid foundation in software development, particularly in areas such as Java,Webdevelopment, SQL, Git, and GitHub.</li>
-                      <li> My expertise in these areas allows me to approach projects with confidence and deliver high-quality results.I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering.</li>
-                      <li> I actively seek out opportunities to expand my knowledge and skills, embracing new technologies and approaches.Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate. </li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name:Manohar T H</li>
-                        <!-- <li>Age:20</li>      -->
-                        <li>From: Bangalore,India</li>
-                        <li>Email:manohar017manu@gmail.com</li>
-                        <li>Education:MCA<span>(currently)</span></li>
-                        <li>Linkedin:<a href="https://www.linkedin.com/in/manohar-th/">manohar-th</a></li>
-                        <li>Github :<a href="https://github.com/cybmanuer">cybmanuer</a></li>
+  </div>
+  <div class="img">
+    <img src="/files/good_boy-removebg-preview.png">
+  </div>
+</section>
 
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
         <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
+   
+<section id="education" class="education-section">
+  <div class="container">
+    <h2 class="section-title">Education & Professional Profile</h2>
+    <div class="education-wrapper">
 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        MCA
-                                    </h3>
-                                    <h4 class="timeline-title">BMS College of Engineering</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2024-currently
-                                    </h4>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">BCA</h3>
-                                    <h4 class="timeline-title">Seshadripuram College Tumkur</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2021-2023
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        SSLC
-                                    </h3>
-                                    <h4 class="timeline-title"> Vivekananda Vidyavardhaka school</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2017-2018
-                                    </h4>
-                                </div>
+      <!-- Left Side: Education Cards -->
+      <div class="education-cards">
+        <h3 class="subheading">Education</h3>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">Others</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        TECHNICAL SKILLS
-                                    </h3>
-                                    
-                                    <li class="timeline-text">Languages: C/C++,Java,Python,JS(Intermediate)</li>
-                                    <li class="timeline-text">Web development: HTML, CSS, MySQL ,PHP </li>
-                                    <li class="timeline-text">Developer Tools : VS Code,Git,Github,Firebase.</li>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">ACCOMPLISHMENT</h3>
-                                    <li class="timeline-text">Stood 2nd place idea Presentation at Seshadripuram Business college Bangalore</li>
-                                    <li class="timeline-text">Participated in Google Developer’s Fest Bangalore 2023.</li>
-                                    <li class="timeline-text">Participated in Web Designing Competition Organised by ST JOSEPH’S University (march 2024)
-                                    </li>
-
-                                </div>
-
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Internship</h3>
-                                    <!-- <li class="timeline-text">Career Essentials in Cybersecurity by Microsoft and LinkedIn</li>
-                                    <li class="timeline-text">NTRODUCTION TO CYBERSECURITY  -Udemy</li>
-                                    <li class="timeline-text">SQL BASICS -GreateLearning</li> -->
-                                    <li class="timeline-text"> A 6-week internship on Cybersecurity & Ethical Hacking from 05-Nov-2024 to 17-Dec-2024, I developed a project titled "SecureText: Enhancing Communication Privacy through Text Encryption Using Cryptographic Algorithms", focusing on encryption techniques to protect communication privacy.</li>
-
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="edu-card">
+          <h4>MCA</h4>
+          <p class="school">BMS College of Engineering</p>
+          <p class="year"><i class="fa fa-calendar"></i> 2024 – Present</p>
         </div>
-    </section>
+
+        <div class="edu-card">
+          <h4>BCA</h4>
+          <p class="school">Seshadripuram College, Tumkur</p>
+          <p class="year"><i class="fa fa-calendar"></i> 2021 – 2023</p>
+        </div>
+
+        <div class="edu-card">
+          <h4>SSLC</h4>
+          <p class="school">Vivekananda Vidyavardhaka School</p>
+          <p class="year"><i class="fa fa-calendar"></i> 2017 – 2018</p>
+        </div>
+      </div>
+
+      <!-- Right Side: Skills and Others -->
+      <div class="extra-info">
+        <h3 class="subheading">Skills & Experience</h3>
+
+        <div class="info-box">
+          <h4>Technical Skills</h4>
+          <ul>
+            <li><b>Programing Languages : </b>  C++ , Python , Java </li>
+            <li><b> Web Development :</b> HTML /CSS , JavaScript,MySQL </li>
+            <li><b>Libraries/Frameworks: </b>NodeJS, ExpressJS, Pandas, Streamlit</li>
+            <li><b>Relevant Courses:</b> Data Structures, Database Management, Computer Networks, DevOps</li>
+            <li><b>Cyber security Tools:</b> Nmap , BurpSuite , Sqlmap ,Hydra,  Metasploit.</li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h4>Accomplishments</h4>
+          <ul>
+            <li><b>24-Hour Hackathon</b>:  Secured First Prize at the 24-Hour Hackathon organized by NMIT, February 2025.</li>
+            <li><b>2nd Place</b> Idea Presentation, SBC Bangalore</li>
+            <!-- <li>Web Design Contest – St. Joseph’s University, 2024</li> -->
+          </ul>
+        </div>
+
+        <!-- <div class="info-box">
+          <h4>Internship</h4>
+          <p>Completed a 6-week internship in Cybersecurity & Ethical Hacking (Nov–Dec 2024), where I developed “SecureText” – a text encryption tool focusing on communication privacy.</p>
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
         <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My &#128187;
-                    Projects</h4>
-                <p>Discover my projects, in which I spend most of my Time.</p>
-            </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>MEDIMATE</h4>
-                    <p>Developed a web-based hospital management system using
-                        HTML, CSS, PHP, and XAMPP, aimed at optimizing hospital
-                        operations and overseeing various functions effectively
-                    </p>
-                    <button><a href="https://github.com/cybmanuer/MEDIMATE" target="_blank">GitHub</a></button>
-                    <!-- <button><a href="#">DEMO</a></button> -->
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>ZBUDGET</h4>
-                    <p>Created a static user-friendly demo platform for both rental
-                        housing options and skilled daily workers, offering convenient
-                        solutions for housing and various tasks.(HTML,CSS)
-                    </p>
-                    <button><a href="https://github.com/cybmanuer/zbudeget" target="_blank">GitHub</a></button>
-                    <button><a href="https://zero-budget-0.web.app/">Live</a></button>
-                </div>
-                <!-- 4rd Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Database Chat</h4>
-                    <p>Gemini LLM Based Project That Converts the Normal English Language to SQL Query And fetch the Correct Data From the Dtabase using the GUI Interface with Streamlet   
-                    </p>
-                    <button><a href="https://github.com/cybmanuer/SQL_query_genrator" target="_blank">GitHub</a></button>
-                    <button><a href="https://genquery.onrender.com/">Live</a></button>
-                </div>
-            </div>
-            <button type="button" class="pro"><a href="gitpro.html">&#128165; All Github Projects &#128165;</a></button>
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">💻 My Projects</h2>
+    <p class="section-subtitle">Discover my projects, in which I spend most of my time.</p>
 
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-icon"><i class="fa fa-desktop"></i></div>
+        <h3 class="project-title">MEDIMATE</h3>
+        <p class="project-desc">
+          Developed a hospital management system using HTML, CSS, PHP, and XAMPP to optimize operations and administrative control.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/cybmanuer/MEDIMATE" target="_blank" class="btn">GitHub</a>
         </div>
+      </div>
 
-    </section>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-icon"><i class="fa fa-desktop"></i></div>
+        <h3 class="project-title">ZBUDGET</h3>
+        <p class="project-desc">
+          Static demo platform for rental housing and skilled daily workers, built with HTML and CSS for user-friendly accessibility.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/cybmanuer/zbudeget" target="_blank" class="btn">GitHub</a>
+          <a href="https://zero-budget-0.web.app/" target="_blank" class="btn">Live</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-icon"><i class="fa fa-desktop"></i></div>
+        <h3 class="project-title">Database Chat</h3>
+        <p class="project-desc">
+          Gemini LLM-based tool that converts English to SQL queries with a Streamlit interface for fetching data from databases.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/cybmanuer/SQL_query_genrator" target="_blank" class="btn">GitHub</a>
+          <a href="https://genquery.onrender.com/" target="_blank" class="btn">Live</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="all-projects-button">
+      <a href="gitpro.html" class="btn highlight"> <span>💥</span> All GitHub Projects <span>💥</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ------------CERTIFICATES  -->
+
+<section class="slideshow-section" id="certificates">
+   <p class="slid-subtitle">Certificates</p>
+
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="slide fade">
+      <img src="/files/nitte.jpg" alt="Certificate 6">
+      <div class="slide-caption">
+        <h4>24-Hour Hackathon At NMIT</h4>
+        <p>Secured First Prize at the 24-Hour Hackathon organized by NMIT, February 2025.</p>
+        <!-- <a href="#" target="_blank">View Credential</a> -->
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="/files/DSPM.png" alt="Certificate 1">
+      <div class="slide-caption">
+        <h4>Data Security Posture Management</h4>
+        <p>Gained foundational knowledge of DSPM, focusing on automated data discovery, classification, and risk assessment across hybrid environments to ensure privacy and compliance</p>
+        <!-- <a href="https://www.coursera.org/professional-certificates/google-ux-design" target="_blank">View Credential</a> -->
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="/files/cc.png" alt="Certificate 2">
+      <div class="slide-caption">
+        <h4>Career Essentials in Cybersecurity</h4>
+        <p>Completed a beginner-friendly program covering core cybersecurity concepts, threat protection, and career pathways in the field.</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="/files/azur].jpg" alt="Certificate 3">
+      <div class="slide-caption">
+        <h4>Azure Fundamentals</h4>
+        <p>Gained foundational knowledge of Azure cloud services, core concepts and basic deployment models..</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="/files/EC_sqlI.png" alt="Certificate 4">
+      <div class="slide-caption">
+        <h4>Sql Injection Attacks</h4>
+        <p>Learned how SQL injection attacks work, their impact, and methods to detect and prevent them using secure coding practices.</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="/files/java.png" alt="Certificate 5">
+      <div class="slide-caption">
+        <h4>Career Essentials in Cybersecurity</h4>
+        <p>Completed Microsoft & LinkedIn’s “Career Essentials in Cybersecurity” program.</p>
+        <a href="#" target="_blank">View Credential</a>
+      </div>
+    </div>
+  
+
+
+
+    <!-- Controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <!-- Dots -->
+  <div class="slideshow-dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+</section>
+
+
+
+
+
+<!-- -------------------------------LEET Code -->
+
+
+
+
+<section class="leetcode-section" id="leetcode">
+  <div class="leetcode-container">
+    <div class="leetcode-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Logo" class="leetcode-logo">
+      <h2>LeetCode Dashboard</h2>
+      <a href="https://leetcode.com/u/Manohar_17/" target="_blank" class="leetcode-link">
+        View My Profile
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+    <div class="leetcode-main">
+      <div class="leetcode-card-wrap">
+        <a href="https://leetcode.com/u/Manohar_17/" target="_blank" rel="noopener">
+          <img 
+            src="https://leetcard.jacoblin.cool/Manohar_17?theme=light&ext=contest" 
+            alt="Manohar LeetCode Stats" 
+            class="leetcode-card-img"
+          />
+        </a>
+      </div>
+      <div class="leetcode-info-panel">
+        <div id="leetcode-stats" class="leetcode-stats-boxes">
+          <div class="loading">Loading stats...</div>
+        </div>
+        <div class="leetcode-skills-box">
+          <h4>Skills</h4>
+          <ul>
+            <li>
+                <b>Fundamental:</b> Array, String, Stack,Queues 
+            </li>
+            <li>
+              <b>Intermediate:</b> Database, Hash Table,Two Pointers
+            </li>
+            <li>
+              <b>Advanced:</b> Dynamic Programming, Divide and Conquer, Trees
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- -------------------------CYBER -->
+
+
+
+
+<section class="cybersec-dashboard-section" id="cybersec">
+  <div class="cybersec-dashboard-container">
+    <!-- Left: Profile/Summary -->
+    <aside class="cybersec-profile">
+      <div class="cybersec-avatar">
+        <i class="fa-solid fa-user-shield"></i>
+      </div>
+      <h2 class="cybersec-title">Cybersecurity </h2>
+      <div class="cybersec-summary">
+        <div class="cybersec-role">Cybersecurity Intern -Present</div>
+        <div class="cybersec-company">Techvito <span class="cybersec-date">April 2025 – Present</span></div>
+        <p>
+          Performing penetration testing on in-house products using top cybersecurity tools to detect and address vulnerabilities.
+        </p>
+      </div>
+      <div class="cybersec-cert-list">
+        <h4>Certifications</h4>
+        <ul>
+          <li><i class="fa-solid fa-certificate"></i> Career Essentials in Cybersecurity <span class="cert-issuer">LinkedIn</span></li>
+          <li><i class="fa-solid fa-certificate"></i> DSPM Fundamentals <span class="cert-issuer">Securiti</span></li>
+          <li><i class="fa-solid fa-certificate"></i> Linux Command Line <span class="cert-issuer">Udemy</span></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- Right: Knowledge Cards -->
+    <main class="cybersec-cards-panel">
+      <div class="cybersec-card">
+        <div class="cybersec-card-header">
+          <i class="fa-solid fa-toolbox"></i>
+          <span>Security Tools</span>
+        </div>
+        <div class="cybersec-tags">
+          <span class="tag blue">Nmap</span>
+          <span class="tag orange">BurpSuite</span>
+          <span class="tag blue">Sqlmap</span>
+          <span class="tag orange">Hydra</span>
+          <span class="tag blue">Metasploit</span>
+        </div>
+      </div>
+      <div class="cybersec-card">
+        <div class="cybersec-card-header">
+          <i class="fa-solid fa-brain"></i>
+          <span>Relevant Knowledge</span>
+        </div>
+        <ul>
+          <li>Computer Networks</li>
+          <li>Cybersecurity Fundamentals</li>
+          <li>Regulatory Compliance: <span class="tag gray">SOC2</span> <span class="tag gray">HIPAA</span> <span class="tag gray">GDPR</span></li>
+        </ul>
+      </div>
+      <div class="cybersec-card">
+        <div class="cybersec-card-header">
+          <i class="fa-brands fa-linux"></i>
+          <span>Technologies</span>
+        </div>
+        <div class="cybersec-tags">
+          <span class="tag blue">Linux</span>
+          <span class="tag gray">Kali Linux</span>
+          <span class="tag gray">Unix</span>
+          <span class="tag orange">Git</span>
+          <span class="tag orange">GitHub</span>
+        </div>
+      </div>
+      <!-- <div class="cybersec-card">
+        <div class="cybersec-card-header">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Currently Learning</span>
+        </div>
+        <p>Expanding my expertise in advanced cybersecurity concepts, penetration testing, and cloud security.</p>
+      </div> -->
+    </main>
+  </div>
+</section>
+
+
+
+
+
+<!-- DSA -->
+
+<section class="concepts-dashboard-section" id="concepts">
+  <div class="concepts-dashboard-container">
+    <header class="concepts-dashboard-header">
+      <i class="fa-solid fa-layer-group"></i>
+      <h2>CS Concepts </h2>
+    </header>
+    <div class="concepts-dashboard-grid">
+      <!-- DSA Card -->
+      <div class="concepts-card">
+        <div class="concepts-card-header">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span>Data Structures & Algorithms (DSA)</span>
+        </div>
+        <ul>
+          <li><b>Structures:</b> Array, Linked List, Stack, Queue, Tree, Graph, Heap, Hash Table</li>
+          <li><b>Algorithms:</b> Sorting, Searching, Recursion, Greedy, Divide & Conquer, Dynamic Programming, Backtracking</li>
+          <!-- <li><b>Complexity:</b> Time & Space Analysis, Big O Notation</li> -->
+        </ul>
+      </div>
+      <!-- OOPs Card -->
+      <div class="concepts-card">
+        <div class="concepts-card-header">
+          <i class="fa-solid fa-cubes"></i>
+          <span>Object Oriented Programming (OOPs)</span>
+        </div>
+        <ul>
+          <li><b>Principles:</b> Encapsulation, Abstraction, Inheritance, Polymorphism</li>
+          <li><b>Concepts:</b> Classes & Objects, Constructors, Interfaces, Abstract Classes</li>
+          <!-- <li><b>Design:</b> SOLID Principles, Design Patterns (Singleton, Factory, Observer, etc.)</li> -->
+        </ul>
+      </div>
+      <!-- Web Development Card -->
+      <div class="concepts-card">
+        <div class="concepts-card-header">
+          <i class="fa-solid fa-globe"></i>
+          <span>Web Development</span>
+        </div>
+        <ul>
+          <li><b>Frontend:</b> HTML, CSS, JavaScript, Responsive Design</li>
+          <li><b>Backend:</b> Node.js, PHP, Python, REST APIs</li>
+          <li><b>Frameworks:</b> React, Express, Bootstrap</li>
+          <!-- <li><b>Other:</b> Web Security, Authentication, Deployment</li> -->
+        </ul>
+      </div>
+      <!-- Networking Card -->
+      <!-- <div class="concepts-card">
+        <div class="concepts-card-header">
+          <i class="fa-solid fa-network-wired"></i>
+          <span>Networking</span>
+        </div>
+        <ul>
+          <li><b>Protocols:</b> TCP/IP, UDP, HTTP/HTTPS, FTP, SMTP, DNS</li>
+          <li><b>Layers:</b> OSI Model, Network Devices (Router, Switch, Hub)</li>
+          <li><b>Security:</b> Firewalls, VPN, SSL/TLS, Network Topologies</li>
+        </ul>
+      </div> -->
+      <!-- SQL/DBMS Card -->
+      <div class="concepts-card">
+        <div class="concepts-card-header">
+          <i class="fa-solid fa-database"></i>
+          <span>SQL & DBMS</span>
+        </div>
+        <ul>
+          <li><b>SQL:</b> CRUD Operations, Joins, Aggregations, Subqueries, Indexing</li>
+          <li><b>DBMS:</b> Normalization, Transactions, ACID Properties, ER Diagrams</li>
+          <li><b>Types:</b> Relational (MySQL, PostgreSQL), NoSQL (MongoDB)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- BLOG Working -->
+
+<section class="medium-section" id="blogs">
+  <div class="medium-container">
+    <h2 class="medium-title"><i class="fa-brands fa-medium"></i> My Medium Blogs</h2>
+    <div id="medium-blogs" class="medium-blogs-grid">
+      <!-- Blogs will load here -->
+    </div>
+        <div class="view-other-blogs">
+      <a href="https://medium.com/@manohar017manu" target="_blank" rel="noopener" class="view-blogs-btn">
+        View Other Blogs
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
 
         <!-------------------------- Contact Me -------------------------->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <!-- Left: Cartoon Image (hidden on mobile/tablet) -->
+    <div class="contact-image">
+      <!-- Replace with your own cartoon image -->
+      <img src="/files/boy-removebg-preview.png" alt="Say Hi!" />
+    </div>
+    <!-- Right: Contact Form -->
+    <div class="contact-form-area">
+      <div class="contact-title">
+        <h4>Contact Me <span class="emoji">&#128526;</span></h4>
+        <p>Get In Touch</p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="6bf71a28-1943-4323-b838-38c932898dcb">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <span id="msg"></span>
+      </form>
+      <p class="contact-footnote">
+        "It's not just a design; it actually works <span class="emoji">&#128527;</span>. Try it."
+      </p>
+    </div>
+  </div>
+</section>
+    <!-------------------------- Footer section -------------------------->
+   
+   
+    <!-- <footer class="footer">
+    <small class="message"></small>
+    <small class="copyright">&#11088;
+        Copyright &copy;  2025. Not sure about this, but built and hosted by me&#128526;
+        &#11088;</small>
+   </footer> -->
 
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me &#128526</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="6bf71a28-1943-4323-b838-38c932898dcb">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <!-- <input type="text" name="Subject" placeholder="Subject"> -->
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input type="submit" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-            <br><br>    
-            <p>"It's not just a design; it actually works&#128527;. Try it."</p>
 
-        </div>
-    </section>
+<footer class="simple-footer">
+  <div class="footer-content">
+    <span>&#11088;
+        Copyright &copy;  2025. Not sure about this, but built and hosted by me&#128526;
+        &#11088;</span>
+    <span class="footer-separator">|</span>
+    <!-- <a href="#home" class="footer-link">Back to Top</a> -->
+  </div>
+</footer>
+
+   
         
     <!-------------------------- JS -------------------------->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -276,13 +551,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
     
-    <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message"></small>
-    <small class="copyright">&#11088;
-        Copyright &copy;  2025. Not sure about this, but built and hosted by me&#128526;
-        &#11088;</small>
-   </footer>
+
+
 
 </body>
 </html>

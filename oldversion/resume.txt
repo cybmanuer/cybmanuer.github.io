@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERVICES</title>
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>Pruthvi Cyber | Services</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+  color: white;
+}
+
+header{
+  background-color: #0c0c0c;
+  position: relative;
+  /* top: 0; */
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 5rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  /* border-radius: calc(var(--curve) * 1px); */
+  overflow: hidden;
+  text-decoration: none;
+  /* background-color: #6A515E; */
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.card__image {      
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  /* height: auto; */
+
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .3s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .3s ease-in-out;
+  background-color: rgb(124, 130, 209);
+
+  /* background-color: #6A515E; */
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+  
+}
+
+/* .card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}        */
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+/* .card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+  
+} */
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  /* color: #6A515E; */
+  color: rgb(10, 1, 1);
+  font-weight: 800;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  /* font-family: "MockFlowFont";   */
+  font-size: .8em; 
+  color: #020f08;  
+  font-weight: 900;
+
+}
+
+.card__status {
+  font-size: .8em;
+  color: #020f08;
+  font-weight: 900;
+}
+
+.card__description {
+  /* background-color: rgb(182, 184, 210); */
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #070216;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-weight: 600;
+}    
+
+.map iframe{
+    width: 80%;
+    /* height: 80%; */
+    margin-left: 10%;
+    margin-top: 5%;
+   
+
+}
+</style>
+<body>
+
+  <div class="head">
+    <header class="header_section">
+
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand " href="index.html"> <span class="in">P</span>ruthvi <span class="in">C</span>yber </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#contactus"> About</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="education.html">Education </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#contactus">Contact Us</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>
+                      Login
+                    </span>
+                  </a>
+                </li>
+                <form class="form-inline justify-content-center">
+                  <!-- <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button> -->
+                </form>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    </div>
+
+    <!-- <div class="cards"> -->
+      
+      <ul class="cards">
+
+        <li>
+          <a href="" class="card">
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/01/03/9f6a2ccb65b678efc86b7d0488c39392abfee.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                <!-- <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">AADHAR CARD</h3>            
+                  <span class="card__status">Services</span>
+                </div>
+              </div>
+              <p class="card__description">Upadating Address </p>
+              <p class="card__description">Changing Contact number</p>
+              <p class="card__description">Update DOB</p>
+     
+
+            </div>
+          </a>      
+        </li>
+
+
+        <li>
+          <a href="" class="card">
+            <img src="https://www.91-cdn.com/hub/wp-content/uploads/2023/09/Ration-Card.jpg" class="card__image" alt="" />
+            <div class="card__overlay">        
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">RATION CARD</h3>
+                  <span class="card__status">Services</span>
+                </div>
+              </div>
+              <p class="card__description">New Ration Card Application</p>
+              <p class="card__description">Adding Or removing Family Member </p>
+              <p class="card__description">Changing Shop Address </p>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="" class="card">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201912/pan_card_0.jpeg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">PAN CARD</h3>
+                  <span class="card__tagline">Services</span>            
+                  <!-- <span class="card__status">1 hour ago</span> -->
+                </div>
+              </div>
+              <p class="card__description">Application For New Pan Card</p>
+              <p class="card__description">Application For Re-Print Pan Card</p>
+              <p class="card__description">Application For Changes in Pan Card</p>
+            </div>
+          </a>
+        </li>
+      
+        
+
+        <li>
+          <a href="" class="card">
+            <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">PASSPORT</h3>
+                  <span class="card__status">Requried Documents</span>
+                </div>          
+              </div>
+              <p class="card__description"> Aadhaar card.
+                PAN card..</p>
+              <p class="card__description"> Driving licence.
+                Birth certificate.10th standard marks card</p>
+              <p class="card__description">Ration card.
+                5 photo's Voter ID</p>
+
+            
+            </div>
+          </a>
+        </li>   
+        
+        <li>
+          <a href="" class="card">
+            <img src="https://st.adda247.com/https://adda247jobs-wp-assets-prod.adda247.com/jobs/wp-content/uploads/sites/2/2023/02/20103908/01-38.png" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">Voter ID</h3>
+                  <span class="card__status">Services</span>
+                </div>          
+              </div>
+              <p class="card__description">Application For New Voter ID
+                Application For Correction
+              </p>
+              <p class="card__description"><b>Rquried Documents</b><br/>
+                Aadhar Card,Address Prof,<br>Photo,Contact Phone Number
+              </p>
+            </div>
+          </a>
+        </li>  
+        <li>
+          <a href="" class="card">
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/17/21/train-tickets.jpg?width=1200&height=1200&fit=crop" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">Ticket Booking</h3>
+                  <span class="card__status">Services</span>
+                </div>          
+              </div>
+              <p class="card__description">Railway Ticket Booking</p>
+              <p class="card__description">Flight Ticket Booking</p>
+              <p class="card__description">Bus Ticket Booking</p>
+
+            </div>
+          </a>
+        </li>  
+        <li>
+          <a href="" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW3-nVymV1wUc7X1Y9fpQuwF61dOYJ_ztHYKvAb6vtNuT0GEud6E5WdluPkOSjLqXau8&usqp=CAU" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">Temple's Dharshana Tickets</h3>
+                  <span class="card__status">Services</span>
+                </div>          
+              </div>
+              <p class="card__description">Sabarimala Ticket Booking</p>
+              <p class="card__description">kukke subramanya Poja Tickets</p>
+              <p class="card__description">Thirupathi Package Booking</p>
+            </div>
+          </a>
+        </li>  
+        <li>
+          <a href="" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMSxC4OM0IFaMoyCw2eSgwH94bPpgG3dlJ7UqaIny_Q&s" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <!-- <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  -->
+                <!-- <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" /> -->
+                <div class="card__header-text">
+                  <h3 class="card__title">Other Services</h3>
+                  <!-- <span class="card__status">Services</span> -->
+                </div>          
+              </div>
+              <p class="card__description">Governament Job Application's</p>
+              <p class="card__description">Resume Creating</p>
+              <p class="card__description">EF/PF Application's</p>
+              <p class="card__description">Colour and W/B Xerox</p>
+
+            </div>
+          </a>
+        </li>  
+
+
+      </ul>
+
+    </div>
+
+    
+  <!-- Fotter  -->
+  <section class="info_section">
+    <div class="container">
+      <div class="info_top">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand " href="index.html"> <span class="in">P</span>ruthvi <span class="in">C</span>yber </a>
+            </a>
+          </div>
+
+          <div class="col-md-5 ">
+            <div class="info_contact">
+              <a href="https://maps.app.goo.gl/teMNTE1mz7gPtDoP6">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <span>
+                  <a href="tel:9731209321"><i class="fa fa-phone" aria-hidden="true"></i>9731209321</a>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 ">
+            <div class="social_box">
+              <a href="https://wa.me/9731209321">
+                <i class="fa fa-whatsapp">Whatsapp</i>
+              </a> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_bottom">
+        <div class="row">
+              <ul class="info_menu">
+               
+                <li>
+                  <a href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#contactus">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#services">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#education">
+                    Education
+                  </a>
+                </li>
+                <li class="mb-0">
+                  <a href="#contactus">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="login.html">
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.012163076483!2d77.39216507484362!3d13.098415587228727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae259c0b77d047%3A0xb15e8000cf02245f!2sPruthvi%20Cyber!5e0!3m2!1sen!2sin!4v1714544603079!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+          </div>
+        
+          <div class="footer_section"><center>
+            <!-- <br><br> -->
+              <p>Copyright © 2024 Pruthvi Cyber</p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+
+
+    
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+  
+</body>
+</html>
